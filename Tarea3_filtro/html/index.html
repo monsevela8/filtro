@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>VUE.JS</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/estilos.css" />
+        <script src="../js/vue.js"></script>
+    </head>
+    <body>
+        <header class="barra1">
+            <span class="h2"> FILTROS</span>
+        </header>
+        
+        <section class="container text-center" id="cont"><h1>Nombres de juegos alreves</h1>
+            <div class="row">
+                
+                <div class="col-md-6 offset-md-3">
+                   <ul class="list-unstyled text-center">
+                       <li v-for="juego in mejoresJuegos">
+                           
+                           {{ juego.titulo | alReves }}
+                       </li>
+                   </ul>
+                   <input type="range" min="0" max="10" v-model="minimo">
+                   <p>{{ minimo }}</p> 
+                </div>
+            </div>
+            
+            <hr/>
+
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h1>Coincidencias : {{coincidencias}}</h1>
+                    <input type="search" v-model="busqueda" placeholder="Buscar juego">
+                   <ul class="list-unstyled text-center">
+                       <li v-for="juego in buscarJuego">
+                           {{ juego.titulo}}
+                       </li>
+                   </ul>
+                   
+                </div>
+            </div>
+            
+            
+        </section>
+        <footer class="h">
+            <span class="h2">Gracias por visitar el programa</span>
+        </footer>
+        <script src="../js/vue.js"></script>
+        <script src="../js/funciones.js"></script>
+    </body>
+</html>

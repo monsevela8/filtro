@@ -1,0 +1,51 @@
+section {
+    background-color: #f8b8f5;
+    padding: 10px 0;
+}
+
+
+label input[type="text"]{
+    height:28px;
+    width:120px;
+    border: solid 1px rgb(207, 17, 17);
+    text-align:center;
+    color:#eb1f85;
+    border-radius:10px;
+    display:block;
+}
+
+li input[type="text"]{
+    height:28px;
+    width:20px;
+    border: solid 1px #fff;
+    text-align:center;
+    color: #b8075f;
+    border-radius:10px;
+}
+
+.h{
+    background-color: #faf395;
+    width: 1260px;
+    height: 50px;
+    text-align:center;
+}
+
+.barra1{
+    background-color: #b895fa;
+    width: 1260px;
+    height: 50px;
+    text-align:center;
+}
+
+.columna{
+    background-color: #faf395;
+    width:100px;
+    margin:0;
+}
+h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+body{
+    background: url(../media/juego.jpg);
+}
